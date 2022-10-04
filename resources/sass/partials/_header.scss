@@ -1,0 +1,45 @@
+header{
+
+    display: flex;
+    align-items: center;
+    height: 120px;
+
+    .first{
+        img{
+            width: 60px;
+        }
+    }
+
+    .nav-bar{
+        margin-left: auto;
+        .menu{
+            display: flex;
+            .menu-item{
+                list-style: none;
+                display: flex;
+
+                .active{
+                    color: $primary;
+                    border-bottom: 8px solid  $primary;
+                }
+
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    color: #000;
+                    font-weight: 500;
+                    height: 100%;
+                    line-height: 112px;
+                    padding: 0px 10px;
+                    border-bottom: 8px solid  #fff;
+
+                    &:hover{
+                        color: $primary;
+                        border-bottom: 8px solid  $primary;
+                    }
+                }
+            }
+        }
+    }
+}

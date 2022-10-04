@@ -1,0 +1,108 @@
+footer{
+    .first{
+        padding: 40px 0px;
+        background-color: $primary;
+        .categories{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                img{
+                    margin-right: 10px;
+                    height: 50px;
+                }
+                p{
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .second{
+        background-image: url(../assets/img/footer-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .wrapper{
+            display: flex;
+            .left{
+                padding: 40px 0px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 40%;
+                nav{
+                    margin-right: 40px;
+                    margin-bottom: 20px;
+                    .title{
+                        color: #fff;
+                        font-size: 1.2rem;
+                        text-transform: uppercase;
+                        margin-bottom: 5px;
+                    }
+                    .menu-item{
+                        list-style: none;
+                        font-size: 1rem;
+                        margin-bottom: 5px;
+    
+                        a{
+                            color: rgb(119, 119, 119);
+                            text-decoration: none;
+    
+                            &:hover{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right{
+                width: 60%;
+                padding: 40px 0px;
+                background-image: url(../assets/img/dc-logo-bg.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .third{
+        background-color: $secondary;
+        padding: 20px 0px;
+
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .btn{
+                border: 2px solid $primary;
+                padding: 12px 15px;
+                background-color: transparent;
+                color: #fff;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            .social-wrapper{
+                display: flex;
+                align-items: center;
+                p{
+                    text-transform: uppercase;
+                    color: $primary;
+                    font-weight: 600;
+                    margin-right: 20px;
+                }
+                .social{
+                    display: flex;
+                    .social-item{
+                        list-style: none;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

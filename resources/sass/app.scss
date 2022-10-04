@@ -1,0 +1,36 @@
+@import './partials/palette.scss';
+@import './partials/global.scss';
+@import './partials/header.scss';
+@import './partials/comics.scss';
+@import './partials/_detail_comic.scss';
+/*
+@import './partials/footer.scss';
+*/
+
+.comics-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0px;
+}
+
+.card{
+    width: calc(100% / 6);
+    margin-bottom: 20px;
+    cursor: pointer;
+    .card-header{
+        padding: 0px 10px;
+        margin-bottom: 10px;
+        img{
+        width: 100%;
+        }
+    }
+    .card-body{
+        padding: 0px 10px;
+        h4{
+            font-size: 0.8em;
+            text-transform: uppercase;
+            line-height: 1.6em;
+        }
+    }
+}

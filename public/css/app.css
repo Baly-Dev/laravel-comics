@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page {
+  height: calc(100vh - 120px);
+  background-color: #1C1C1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page h1 {
+  color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 120px;
+}
+header .first img {
+  width: 60px;
+}
+header .nav-bar {
+  margin-left: auto;
+}
+header .nav-bar .menu {
+  display: flex;
+}
+header .nav-bar .menu .menu-item {
+  list-style: none;
+  display: flex;
+}
+header .nav-bar .menu .menu-item .active {
+  color: #0282F9;
+  border-bottom: 8px solid #0282F9;
+}
+header .nav-bar .menu .menu-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+  height: 100%;
+  line-height: 112px;
+  padding: 0px 10px;
+  border-bottom: 8px solid #fff;
+}
+header .nav-bar .menu .menu-item a:hover {
+  color: #0282F9;
+  border-bottom: 8px solid #0282F9;
+}
+
+#comics .first img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+  height: 450px;
+}
+#comics .second {
+  padding: 65px 0px;
+  margin-top: -5px;
+  background-color: #1C1C1C;
+  color: #fff;
+}
+#comics .second .relative-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#comics .second .relative-wrapper h2 {
+  position: absolute;
+  top: -85px;
+  background-color: #0282F9;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+#comics .second .relative-wrapper .btn {
+  border: 2px solid #0282F9;
+  padding: 12px 15px;
+  background-color: #0282F9;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 12%;
+  margin: 0 auto;
+}
+
+#detail-comic .first img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+  height: 450px;
+}
+#detail-comic .separator {
+  height: 50px;
+  margin-top: -5px;
+  background-color: #0282F9;
+}
+#detail-comic .second {
+  position: relative;
+}
+#detail-comic .second .poster {
+  position: absolute;
+  border: 1px solid #fff;
+  top: -310px;
+}
+#detail-comic .comic-box {
+  padding: 40px 0px;
+}
+#detail-comic .comic-box .title {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#detail-comic .comic-box .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #55BA59;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+#detail-comic .comic-box .description {
+  color: #262626;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+#detail-comic .third {
+  padding: 30px 0px;
+  background-color: #fbfbfb;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+#detail-comic .third .relative-wrapper {
+  display: flex;
+}
+#detail-comic .third .relative-wrapper h4 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+#detail-comic .third .talent {
+  width: 50%;
+  padding-right: 30px;
+}
+#detail-comic .third .talent .talent-row {
+  margin-bottom: 15px;
+  display: flex;
+}
+#detail-comic .third .talent .talent-row .left {
+  width: 20%;
+}
+#detail-comic .third .talent .talent-row .right {
+  width: 80%;
+}
+#detail-comic .third .specs {
+  width: 50%;
+  padding-left: 30px;
+}
+#detail-comic .third .highlight {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #0282F9;
+}
+
+/*
+@import './partials/footer.scss';
+*/
+.comics-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 0px;
+}
+
+.card {
+  width: 16.6666666667%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.card .card-header {
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+.card .card-header img {
+  width: 100%;
+}
+.card .card-body {
+  padding: 0px 10px;
+}
+.card .card-body h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  line-height: 1.6em;
+}
